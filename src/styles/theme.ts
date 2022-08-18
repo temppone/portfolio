@@ -1,8 +1,6 @@
 import { DefaultTheme } from 'styled-components';
 
-export const darkTheme: DefaultTheme = {
-    name: 'dark',
-
+export const defaultTheme: DefaultTheme = {
     palette: {
         white: '#ffffff',
         black: '#000000',
@@ -17,5 +15,12 @@ export const darkTheme: DefaultTheme = {
         sl: '1441px',
     },
 
-    fontSizes: {},
-};
+    fontSizes: {
+        xs: '12px',
+        sm: '16px',
+        md: '18px',
+        lg: '22px',
+        xl: '26px',
+        sl: '30px',
+    },
+} as const;
