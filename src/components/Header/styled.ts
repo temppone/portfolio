@@ -1,8 +1,16 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Header = styled.header`
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
     width: 100%;
-    background-color: ${({ theme }) => theme.palette.white};
+    height: 67px;
+
+    ${({ theme }) => css`
+        background-color: ${theme.palette.white};
+        border-bottom: solid 5px ${theme.palette.black};
+    `}
 `;
 
 export const Title = styled.div`
