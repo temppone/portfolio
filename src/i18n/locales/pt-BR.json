@@ -1,5 +1,11 @@
 {
     "translation": {
-        "Menu.Header": "Menu"       
+        "Menu.Header": "Menu",
+        "Menu.Close": "Fechar",
+        "Menu.Home": "Home",
+        "Menu.About": "Sobre",
+        "Menu.Experiencies": "Experiências",
+        "Menu.Projects": "Projetos",
+        "Menu.Contact": "Contato"
     }
 }
