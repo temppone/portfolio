@@ -5,7 +5,9 @@ export const HeaderContainer = styled.div<{ isActive: boolean }>`
     ${({ isActive, theme }) => css`
         background-color: ${isActive ? `${theme.palette.black}70` : 'none'};
         width: 100vw;
-        height: 100vh;
+        height: ${isActive ? '100vh' : '67px'};
+        position: fixed;
+        z-index: 2;
     `}
 `;
 
@@ -61,8 +63,8 @@ export const MenuItems = styled.div`
 
     @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
         justify-content: space-between;
-        gap: 40px;
         flex-direction: row;
+        gap: 40px;
     }
 `;
 

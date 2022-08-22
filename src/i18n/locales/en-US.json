@@ -6,6 +6,8 @@
        "Menu.About": "About",
        "Menu.Experiencies": "Experiencies",
        "Menu.Projects": "Projects",
-       "Menu.Contact": "Contact"
+       "Menu.Contact": "Contact",
+
+       "Presentation.Hello": "Hello, I am"
     }
 }
