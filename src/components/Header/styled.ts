@@ -7,7 +7,7 @@ export const HeaderContainer = styled.div<{ isActive: boolean }>`
         width: 100vw;
         height: ${isActive ? '100vh' : '67px'};
         position: fixed;
-        z-index: 2;
+        z-index: 3;
     `}
 `;
 

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import presentationBackground from '../../assets/images/presentationBackground.png';
 
 export const Container = styled.div`
@@ -57,4 +57,19 @@ export const DiagonalStrip = styled.div`
     margin-left: -100px;
     font-size: 37px;
     z-index: 1;
+`;
+
+export const Avatar = styled.img`
+    margin-top: -120px;
+    border-radius: 208px;
+    width: 254px;
+    height: 350px;
+    object-fit: cover;
+    position: absolute;
+    z-index: 2;
+    align-self: center;
+
+    ${({ theme }) => css`
+        border: solid 3px ${theme.palette.black};
+    `};
 `;

@@ -6,9 +6,9 @@ interface Button extends HTMLAttributes<HTMLButtonElement> {
     icon?: ReactElement;
 }
 
-const Button = ({ label, icon }: Button) => {
+const Button = ({ label, icon, ...props }: Button) => {
     return (
-        <S.Container>
+        <S.Container {...props}>
             {!!label && <span>{label}</span>}
             {!!icon && <span>{icon}</span>}
         </S.Container>

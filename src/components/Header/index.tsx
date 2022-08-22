@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import useOnClickOutside from '../../hooks/useClickOutside';
+import { useClickOutside } from '../../hooks/useClickOutside';
 import LocaleButton from '../LocaleButton';
 import * as S from './styled';
 
@@ -16,13 +16,13 @@ type Header = {
 const Header = ({ items }: Header) => {
     const { t } = useTranslation();
     const [menuIsOpen, setMenuIsOpen] = useState(false);
-    const reference = useRef<HTMLDivElement | null>(null);
+    const reference = useRef(null);
 
     const handleClickOutside = () => {
         setMenuIsOpen(false);
     };
 
-    useOnClickOutside(reference, handleClickOutside);
+    useClickOutside(reference, handleClickOutside);
 
     return (
         <S.HeaderContainer isActive={menuIsOpen}>

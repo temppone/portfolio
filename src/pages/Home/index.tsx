@@ -3,9 +3,13 @@ import * as S from './styled';
 import presentationImage from '../../assets/images/presentationIllustartion.svg';
 import Button from '../../components/Button';
 import { ArrowDown } from '@styled-icons/fa-solid';
+import avatar from '../../assets/images/avatar.jpeg';
+import Marquee from 'react-fast-marquee';
+import { useRef } from 'react';
 
 const Home = () => {
     const { t } = useTranslation();
+    const ref = useRef<HTMLHeadingElement>(null);
 
     return (
         <S.Container>
@@ -20,14 +24,23 @@ const Home = () => {
                     </S.PresentationText>
 
                     <S.ButtonContainer>
-                        <Button icon={<ArrowDown size="50" />} />
+                        <Button
+                            onClick={() => ref.current?.scrollIntoView()}
+                            icon={<ArrowDown size="50" />}
+                        />
                     </S.ButtonContainer>
                 </S.PresentationContainer>
 
-                <S.DiagonalStrip>front-end front-end front-end</S.DiagonalStrip>
+                <S.DiagonalStrip>
+                    <Marquee gradient={false}>
+                        front-end front-end front-end
+                    </Marquee>
+                </S.DiagonalStrip>
             </S.Section>
 
-            <S.Section>teste</S.Section>
+            <S.Section ref={ref}>
+                <S.Avatar src={avatar} />
+            </S.Section>
         </S.Container>
     );
 };
