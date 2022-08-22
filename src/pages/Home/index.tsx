@@ -25,7 +25,7 @@ const Home = () => {
 
                     <S.ButtonContainer>
                         <Button
-                            onClick={() => ref.current?.scrollIntoView()}
+                            onClick={() => ref.current?.scrollIntoView(false)}
                             icon={<ArrowDown size="50" />}
                         />
                     </S.ButtonContainer>
@@ -38,9 +38,9 @@ const Home = () => {
                 </S.DiagonalStrip>
             </S.Section>
 
-            <S.Section ref={ref}>
+            <S.AboutSection ref={ref}>
                 <S.Avatar src={avatar} />
-            </S.Section>
+            </S.AboutSection>
         </S.Container>
     );
 };
