@@ -8,6 +8,7 @@
         "Menu.Projects": "Projetos",
         "Menu.Contact": "Contato",
 
-        "Presentation.Hello": "Olá! Eu sou"
+        "Presentation.Hello": "Olá! Eu sou",
+        "Presentation.AboutMe": "Sobre mim"
     }
-}
+}   

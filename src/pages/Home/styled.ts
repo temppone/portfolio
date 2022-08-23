@@ -16,15 +16,11 @@ export const Section = styled.section`
     height: calc(100vh - 67px);
     margin-top: 67px;
     width: 100vw;
-
     background-color: transparent;
-
-    border: solid red 3px;
 `;
 
 export const PresentationText = styled.div`
     display: flex;
-
     flex-direction: column;
     justify-content: center;
     font-size: 50px;
@@ -36,6 +32,12 @@ export const PresentationText = styled.div`
 
 export const PresentationName = styled.div`
     font-size: 65px;
+
+    &:hover {
+        ${({ theme }) => css`
+            text-shadow: 2px 2px ${theme.palette.darkBlue};
+        `}
+    }
 `;
 
 export const PresentationContainer = styled.div`
@@ -78,13 +80,20 @@ export const Avatar = styled.img`
     width: 254px;
     height: 350px;
     object-fit: cover;
-    position: absolute;
     z-index: 2;
     align-self: center;
+    margin-top: 5px;
 
     ${({ theme }) => css`
         border: solid 3px ${theme.palette.black};
     `};
+`;
+
+export const AboutContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 `;
 
 export const AvatarContainer = styled.div`
@@ -94,12 +103,29 @@ export const AvatarContainer = styled.div`
 
 export const AboutSection = styled.section`
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    align-items: center;
     height: calc(100vh - 67px);
-    margin-bottom: 67px;
     width: 100vw;
-
     background-color: transparent;
+`;
 
-    border: solid red 3px;
+export const AboutTitle = styled.h3`
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+`;
+
+export const AboutTextContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 12px;
+`;
+
+export const AboutText = styled.div`
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Ubuntu';
 `;
