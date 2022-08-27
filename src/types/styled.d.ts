@@ -10,6 +10,10 @@ declare module 'styled-components' {
     interface IColors {
         white: string;
         black: string;
+        lightYellow: string;
+        darkBlue: string;
+        red: string;
+        lightPink: string;
     }
 
     interface IBreakpoints {

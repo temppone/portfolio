@@ -2,8 +2,12 @@ import { DefaultTheme } from 'styled-components';
 
 export const defaultTheme: DefaultTheme = {
     palette: {
-        white: '#ffffff',
+        white: '#FFFFFF',
         black: '#000000',
+        lightYellow: '#FFDCA8',
+        darkBlue: '#2B9EB3',
+        red: '#FF6B6B',
+        lightPink: '#FAB9B9',
     },
 
     breakpoints: {

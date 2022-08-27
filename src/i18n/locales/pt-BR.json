@@ -6,6 +6,12 @@
         "Menu.About": "Sobre",
         "Menu.Experiencies": "Experiências",
         "Menu.Projects": "Projetos",
-        "Menu.Contact": "Contato"
+        "Menu.Contact": "Contato",
+
+        "Presentation.Hello": "Olá! Eu sou",
+        "Presentation.AboutMe": "Sobre mim",
+
+        "Home.AboutImage": "Foto de Gustavo Tempone",
+        "Home.Experiences": "Experiências"
     }
-}
+}   
