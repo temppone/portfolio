@@ -7,6 +7,7 @@ export const defaultTheme: DefaultTheme = {
         lightYellow: '#FFDCA8',
         darkBlue: '#2B9EB3',
         red: '#FF6B6B',
+        lightPink: '#FAB9B9',
     },
 
     breakpoints: {

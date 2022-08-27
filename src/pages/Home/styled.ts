@@ -129,3 +129,67 @@ export const AboutText = styled.div`
     font-weight: 400;
     font-family: 'Ubuntu';
 `;
+
+export const AboutMeIllustration = styled.img`
+    height: 322px;
+    margin-right: -20px;
+    align-self: flex-end;
+`;
+
+export const ExperiencesSection = styled.section`
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 67px);
+    width: 100vw;
+    background-color: ${({ theme }) => theme.palette.lightPink};
+`;
+
+export const ExperiencesTitle = styled.h3`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 400;
+    width: 100vw;
+    height: 87px;
+    text-transform: uppercase;
+
+    ${({ theme }) => css`
+        border: solid 5px ${theme.palette.black};
+        background-color: ${theme.palette.red};
+    `}
+`;
+
+export const ExperiencesTimeline = styled.div`
+    min-width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
+export const ExperienceBox = styled.li`
+    padding: 20px;
+    background-color: ${({ theme }) => theme.palette.white};
+    border-radius: 12px;
+    box-shadow: 5px 5px;
+    margin-bottom: 16px;
+`;
+
+export const Timeline = styled.div`
+    height: 80%;
+    width: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: ${({ theme }) => theme.palette.black};
+    }
+`;
+
+export const ExperienceList = styled.ul``;

@@ -40,7 +40,10 @@ const Home = () => {
             </S.Section>
 
             <S.AboutSection ref={ref}>
-                <img src={aboutIllustration} alt={t('Home.Image')} />
+                <S.AboutMeIllustration
+                    src={aboutIllustration}
+                    alt={t('Home.AboutImage')}
+                />
 
                 <S.AboutContainer>
                     <S.Avatar src={avatar} />
@@ -56,6 +59,51 @@ const Home = () => {
                     </S.AboutTextContainer>
                 </S.AboutContainer>
             </S.AboutSection>
+
+            <S.ExperiencesSection>
+                <S.ExperiencesTitle>{t('Home.Experiences')}</S.ExperiencesTitle>
+
+                <S.ExperiencesTimeline>
+                    <S.Timeline>
+                        <S.ExperienceList>
+                            <S.ExperienceBox>
+                                <h4>Teste</h4>
+                                <p>2014-2015</p>
+                                <p>
+                                    Ipsum incididunt nostrud excepteur irure ad
+                                    ea ullamco quis duis.
+                                </p>
+                            </S.ExperienceBox>
+
+                            <S.ExperienceBox>
+                                <h4>Teste</h4>
+                                <p>2014-2015</p>
+                                <p>
+                                    Ipsum incididunt nostrud excepteur irure ad
+                                    ea ullamco quis duis.
+                                </p>
+                            </S.ExperienceBox>
+
+                            <S.ExperienceBox>
+                                <h4>Teste</h4>
+                                <p>2014-2015</p>
+                                <p>
+                                    Ipsum incididunt nostrud excepteur irure ad
+                                    ea ullamco quis duis.
+                                </p>
+                            </S.ExperienceBox>
+                            <S.ExperienceBox>
+                                <h4>Teste</h4>
+                                <p>2014-2015</p>
+                                <p>
+                                    Ipsum incididunt nostrud excepteur irure ad
+                                    ea ullamco quis duis.
+                                </p>
+                            </S.ExperienceBox>
+                        </S.ExperienceList>
+                    </S.Timeline>
+                </S.ExperiencesTimeline>
+            </S.ExperiencesSection>
         </S.Container>
     );
 };

@@ -9,6 +9,9 @@
         "Menu.Contact": "Contato",
 
         "Presentation.Hello": "Olá! Eu sou",
-        "Presentation.AboutMe": "Sobre mim"
+        "Presentation.AboutMe": "Sobre mim",
+
+        "Home.AboutImage": "Foto de Gustavo Tempone",
+        "Home.Experiences": "Experiências"
     }
 }   

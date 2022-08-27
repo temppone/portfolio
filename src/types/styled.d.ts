@@ -13,6 +13,7 @@ declare module 'styled-components' {
         lightYellow: string;
         darkBlue: string;
         red: string;
+        lightPink: string;
     }
 
     interface IBreakpoints {

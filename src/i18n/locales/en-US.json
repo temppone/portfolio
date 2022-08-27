@@ -8,6 +8,9 @@
        "Menu.Projects": "Projects",
        "Menu.Contact": "Contact",
 
-       "Presentation.Hello": "Hello, I am"
+       "Presentation.Hello": "Hello, I am",
+       "Home.AboutImage": "Photography of Gustavo Tempone",
+       "Home.Experiences": "Experiências"
+        
     }
 }
